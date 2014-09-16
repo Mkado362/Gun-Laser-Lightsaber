@@ -2,6 +2,7 @@
 import random
 # END IMPORTS
 
+# Define game start
 def play():
 	name = "Jedi "
 	print ("What's your name?")
@@ -12,7 +13,7 @@ def play():
 	print ("Lord Dawku wants to fight you one on one.")
 	print ('Lord Dawku: "What is your weapon of choice?"')
 	
-
+	# Define weapon choice
 	def choice():
 		print ("[G] Gun, [L] Laser or [S] Lightsaber.")
 		weapon = input ("> ")
@@ -35,6 +36,7 @@ def play():
 		else:
 			ldweapon = "lightsaber"
 
+		# Define start of fight
 		def fight():
 			if weapon == ldweapon:
 				print("We're too evenly matched with a " + weapon + ".")
@@ -65,10 +67,12 @@ def play():
 					#laser beats gun
 					#gun beats lightsaber
 					#lightsaber beats laser
+					
+		#Start of fight
 		fight()
 
-
-
+	# Weapon choice
 	choice()
 
+# Start game
 play()
