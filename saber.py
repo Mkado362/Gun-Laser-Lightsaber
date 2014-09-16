@@ -16,6 +16,7 @@ def play():
 	# Define weapon choice
 	def choice():
 		print ("[G] Gun, [L] Laser or [S] Lightsaber.")
+		print ("For those who are scared, [R] run.")
 		weapon = input ("> ")
 
 		if weapon == "g" or weapon == "G":
@@ -24,6 +25,8 @@ def play():
 			weapon = "laser"
 		elif weapon == "s" or weapon == "S":
 			weapon = "lightsaber"
+		elif weapon == "r" or weapon == "R":
+			quit()
 		else:
 			print ('Lord Dawku: "I SAID PICK A WEAPON!"')
 			choice()
@@ -67,7 +70,11 @@ def play():
 					#laser beats gun
 					#gun beats lightsaber
 					#lightsaber beats laser
-					
+			print("")
+			print("Again?")
+			print("")
+			choice()
+
 		#Start of fight
 		fight()
 
